@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="fa-IR">
+<html dir="rtl">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<title>فرم و جدول</title>
+<style>
+body
+{
+background-color: #00FFFF;
+}
+background-attachment:fixed;
+<meta charset="UTF-8";
+</style> 
+</head>
+<body style="direction:rtl;">
+<h1>Forms and Tables</h1>
+<marquee loop="1" bgcolor="teal" width="50%">
+<h2 style="color:#ffffff";>ترسیم فرم ها و جدول ها در صفحات وب</h2>
+</marquee>
+<p><h4><b>برای ارسال اطلاعات وارد شده توسط کاربر به سمت مقصد استفاده می شود. یک فرم دارای شناسه های زیادی از جمله action,mathode,name,target است که در میان آنها بکار بردن action ضروری است.</b></h4></p>
+<span style="direction:ltr;"> 
+<form>
+<form action="showform.php" methode="get" name="page" target="-blank">
+<lable>Which page have you read so far?</lable><br/>
+<input type="checkbox" name="vehicle" value="homepage" />homepage<br/>
+<input type="checkbox" name="vehicle" value="color" />color<br/>
+<input type="checkbox" name="vehicle" value="image" />image<br/>
+</span>
+all page: <input type="radio" name="a" value="last">
+first page: <input type="radio" name="a" value="first"><br/>
+<p> what is your favorite background?
+<select name="select_favorite">
+<option value="defult"> defult </option>
+<option value="white"> white </option>
+</select></fieldset></p>
+<p id="buttons">
+<input type="submit" value="send"/>
+</p>
+</form>
+<span style="direction:rtl;"><p><h4>از تگ table برای طراحی جدول و از تگ tr برای رسم ردیف و از تگ td برای ایجاد سلولهای داخل ردیف استفاده می شود.<h4></p></span>
+<table border="2" bgcolor="ffffff">
+<tr>
+<th> ستون اول </td>
+<th> ستون دوم </td>
+<th> ستون سوم </td>
+</tr>
+<tr>
+<td> 1 </td>
+<td> 2 </td>
+<td> 3 </td>
+</tr>
+<tr>
+<td> 4 </td>
+<td> 5 </td>
+<td> 6 </td>
+</tr>
+</table>
+<p>
+<input type="button" value="Ondblclick" ondblclick="alert('ondblclick')"> برای آزمایش رویداد دبل کلیک ماوس </p>
+<p><font size="+1"><a href="index.htm"title="پروژه نمونه کار" target="_top";><span style="direction:rtl";>بازگشت به صفحه نخست</a></font size>
+</body>
+</html>
